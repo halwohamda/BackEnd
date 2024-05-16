@@ -9,4 +9,4 @@ app.use('/',tasksRoute)
 
 app.listen(port, ()=>{
     console.log(`listening on ${port}`);
-})
+});
