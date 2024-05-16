@@ -17,7 +17,8 @@ export const newTasks = async(req,res)=>{
 export const getAllTasks = async(req,res)=>{
     const tasks = await prisma.tasks.findMany({})
     res.status(200).json({
-        message: "success gated all tasks"
+        message: "success gated all tasks",
+        tasks
     
     })
 }
