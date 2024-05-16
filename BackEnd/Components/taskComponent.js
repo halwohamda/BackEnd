@@ -11,7 +11,7 @@ export const newTasks = async(req,res)=>{
     })
     res.status(201).json({
         message: 'success Added a newTask'
-    })
+    });
 
 }
 export const getAllTasks = async(req,res)=>{
