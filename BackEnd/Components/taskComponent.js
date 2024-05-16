@@ -2,11 +2,11 @@ import {PrismaClient} from '@prisma/client';
 const prisma = new PrismaClient();
 
 export const newTasks = async(req,res)=>{
-    const {title , description} = req.body;
+    const {title , Description} = req.body;
     const newTask = await prisma.tasks.create({
         data:{
             title,
-            description
+            Description
         }
     })
     res.status(201).json({
