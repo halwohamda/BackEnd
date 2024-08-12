@@ -4,3 +4,7 @@ const request = require("path")
 
 
 const app = express();
+
+app.get("/",(res,req)=>{
+    
+})
