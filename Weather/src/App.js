@@ -16,12 +16,12 @@ app.use(express.static(publicPath));
 const port = process.env.PORT ||4000;
 
 app.get("/", (req,res)=>{
-    res.render("hello this is my first app");
+    res.render("index",{title:"Weather App"});
 });
 
 app.get("/weather", (req,res)=>{
   if (!req.query. address){
-    return res.send("index",{title:"Weather App"});
+    return res.send("Address is required");
   }
     weatherData(req.query. address ,(error, result)=>{
       if (error){
