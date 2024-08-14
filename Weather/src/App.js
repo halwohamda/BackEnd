@@ -21,7 +21,7 @@ app.get("/", (req,res)=>{
 
 app.get("/weather", (req,res)=>{
   if (!req.query. address){
-    return res.send("index","Address is required");
+    return res.send("index",{title:"Weather App"});
   }
     weatherData(req.query. address ,(error, result)=>{
       if (error){
