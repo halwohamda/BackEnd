@@ -9,7 +9,7 @@ const weatherData = require("../utils/WeatherData");
 const publicPath = path.join(__dirname,"../public");
 const viewPath = path.join(__dirname,"../templates/view");
 const partialsPath = path.join(__dirname,"../templates/partials");
-app.set("view engine","jade");
+app.set("view engine","hbs");
 app.set("view",viewPath);
 hbs.registerPartials(partialsPath);
 app.use(express.static(publicPath));
