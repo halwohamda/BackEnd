@@ -16,7 +16,7 @@ app.use(express.static(publicPath));
 const port = process.env.PORT ||4000;
 
 app.get("/", (req,res)=>{
-    res.render("index",{ title:"Weather App"});
+    res.send("index",{ title:"Weather App"});
 });
 
 app.get("/weather", (req,res)=>{
